@@ -57,12 +57,14 @@
     transition: all 2s;
 }
 .ex-5-square:hover{
-    width: 100px;
-    height: 100px;
+    /* width: 100px;
+    height: 100px; */
+    transform: scale(2);
 }
 .ex-5-square:active{
-    width: 30px;
-    height: 30px;
+    /* width: 30px;
+    height: 30px; */
+    transform: scale(0.5);
 }
 
 /* EX 6-7-8 */
@@ -99,8 +101,9 @@
 .ex-9-img:hover{
     filter: brightness(25%) invert(100%);
     border-radius: 50%;
-    width: 100%;
-    height: 100%;
+    /* width: 100%;
+    height: 100%; */
+    transform: scale(1.5);
 }
 
 /* EX 10 */
@@ -111,7 +114,10 @@
     animation-duration: 0.1s;
 }
 @keyframes loading {
-    0% {
+    0%{
+        transform: rotate(1turn);
+    }
+    /* 0% {
         transform: rotate(0deg);
     }
     25% {
@@ -126,6 +132,7 @@
     100% {
         transform: rotate(-360deg);
     }
+*/
 }
 
 /* EX 11 */
@@ -139,7 +146,10 @@
     0% {
         transform: rotate(0deg);
     }
-    25% {
+    50%{
+        transform: rotate(315deg);
+    }
+    /* 25% {
         transform: rotate(90deg);
     }
     50% {
@@ -147,7 +157,7 @@
     }
     75% {
         transform: rotate(270deg);
-    }
+    } */
     100% {
         transform: rotate(0deg);
     }
@@ -195,8 +205,9 @@
     }
 
     50%{
-        left: 50%;
-        top: -10px;
+        left: calc(100% - 60px);
+        /* left: 50%;
+        top: -10px; */
     }
 
     100%{
@@ -217,8 +228,9 @@
     }
 
     50%{
-        right: 50%;
-        bottom: -10px;
+        right: calc(100% - 60px);
+        /* right: 50%;
+        bottom: -10px; */
     }
 
     100%{
