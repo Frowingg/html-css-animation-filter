@@ -183,6 +183,105 @@
     height: 20px;
 }
 /* EX 12 */
-/* .ex-12-top-white{
-    animation: move 1s infinite  iteration-count direction fill-mode;
-} */
+.ex-12-top-white{
+    animation-name: move-top;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes move-top {
+    0%{
+        left: 10%;
+        top: -10px;
+    }
+
+    50%{
+        left: 50%;
+        top: -10px;
+    }
+
+    100%{
+        left: 10%;
+        top: -10px;
+    }
+}
+
+.ex-12-bottom-white{
+    animation-name: move-bottom;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes move-bottom {
+    0%{
+        right: 20%;
+        bottom: -10px;
+    }
+
+    50%{
+        right: 50%;
+        bottom: -10px;
+    }
+
+    100%{
+        right: 20%;
+        bottom: -10px;
+    }
+}
+/* EX 13 */
+.ex-13-top-white {
+    animation: move-round-top 5s infinite;
+}
+@keyframes move-round-top {
+    0%{
+        top: -10px;
+        left: 10%;
+    }
+    20%{
+        top: -10px;
+        left: 85%;
+    }
+    40%{
+        left: 85%;
+        top: 90%;
+    }
+    60%{
+        top: 90%;
+        left: -10%;
+    }
+    80%{
+        left: -10%;
+        top: -10px
+    }
+    100%{
+        left: 10%;
+        top: -10px
+        }
+}
+.ex-13-bottom-white {
+    animation: move-round-bottom 5s infinite;
+}
+@keyframes move-round-bottom {
+    0%{
+        bottom: -10px;
+        right: 20%;
+    }
+    20%{
+        bottom: -10px;
+        right: 78%;
+    } 
+    40%{
+        right: 78%;
+        bottom: 90%;
+    }
+    60%{
+        bottom: 90%;
+        right: -10%;
+    }
+    80%{
+        right: -10%;
+        bottom: -10px
+    }
+    100%{
+        bottom: -10px;
+        right: 20%;
+        } 
+}
