@@ -111,7 +111,7 @@
     font-size: 60px;
     animation-name: loading;
     animation-iteration-count: infinite;
-    animation-duration: 0.1s;
+    animation-duration: 0.5s;
 }
 @keyframes loading {
     0%{
